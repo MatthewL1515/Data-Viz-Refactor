@@ -30,6 +30,21 @@ function setup() {
 }
 
 // ____________________________________________________________
+// Class Specifications
+
+class BarGraph {
+  constructor() {
+    this.x = x
+    this.y = y
+    this.width = width
+    this.height = height
+    this.maxHeight = height * 0.8
+    this.data = data // need this for the barWidth function
+    this.barWidth = width / (data.length + 2)
+  }
+}
+
+// ____________________________________________________________
 // Draw Function
 
 function draw() {
